@@ -5,5 +5,5 @@
 @endsection
 
 @section('page-content')
-    contenuto
+    @include('main-sections.hero')
 @endsection

@@ -105,5 +105,21 @@ header a.active {
 
 .header-bottom .search-button i {
   font-size: 1.3rem;
+  color: var(--tertiary-color);
+}
+
+main {
+  background-color: var(--quaternary-color);
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+
+.hero img {
+  width: 100%;
+  max-height: 30rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 
