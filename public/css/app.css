@@ -89,3 +89,21 @@ header a.active {
   color: var(--secondary-color);
 }
 
+.header-bottom .searchbar {
+  border: none;
+  border-bottom: 0.1875rem solid var(--secondary-color);
+  padding: 0.2rem;
+}
+
+.header-bottom .search-button {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  right: 2rem;
+  cursor: pointer;
+}
+
+.header-bottom .search-button i {
+  font-size: 1.3rem;
+}
+

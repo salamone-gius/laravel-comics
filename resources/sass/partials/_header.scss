@@ -62,5 +62,23 @@ header {
             color: var(--secondary-color);
         }
     }
+
+    .searchbar {
+        border: none;
+        border-bottom: .1875rem solid var(--secondary-color);
+        padding: .2rem;
+    }
+
+    .search-button {
+        background-color: transparent;
+        border: none;
+        position: relative;
+        right: 2rem;
+        cursor: pointer;
+
+        i {
+            font-size: 1.3rem;
+        }
+    }
 }
 

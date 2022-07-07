@@ -26,6 +26,11 @@
                 @endforeach
             </ul>
         </nav>
-        <div class="searchbar"></div>
+        <div class="header-searchbar">
+            <input class="searchbar" placeholder="Search" type="search" name="header-searchbar" id="header-searchbar">
+            <button class="search-button" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
     </div>
 </header>
