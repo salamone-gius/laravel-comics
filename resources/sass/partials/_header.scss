@@ -50,14 +50,16 @@ header {
 
 .header-bottom {
     background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--tertiary-color);
 
-    .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    ul li a {
+        font-weight: 900;
 
-        ul li a {
-            font-weight: 900;
+        &:hover {
+            color: var(--secondary-color);
         }
     }
 }

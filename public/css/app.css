@@ -3,9 +3,9 @@
 300;500;700;900&display=swap);:root {
   --primary-color: white;
   --secondary-color: rgb(2, 130, 249);
-  --tertiary-color: rgb(48, 48, 48);
+  --tertiary-color: rgb(58, 58, 58);
   --quaternary-color: rgb(28, 28, 28);
-  --container-md: 75rem;
+  --container-md: 85rem;
 }
 
 * {
@@ -75,15 +75,17 @@ header a.active {
 
 .header-bottom {
   background-color: var(--primary-color);
-}
-
-.header-bottom .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: var(--tertiary-color);
 }
 
-.header-bottom .container ul li a {
+.header-bottom ul li a {
   font-weight: 900;
+}
+
+.header-bottom ul li a:hover {
+  color: var(--secondary-color);
 }
 

@@ -26,5 +26,6 @@
                 @endforeach
             </ul>
         </nav>
+        <div class="searchbar"></div>
     </div>
 </header>
