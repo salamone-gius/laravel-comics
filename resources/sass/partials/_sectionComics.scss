@@ -1,0 +1,62 @@
+.comics-section {
+    * {
+        text-transform: uppercase;
+    }
+
+    .current-series, button.load-more {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        display: inline-block;
+        padding: 1rem;
+        font-weight: bold;
+    }
+
+    .current-series {
+        position: relative;
+        top: -55px;
+    }
+
+    button.load-more {
+        cursor: pointer;
+        padding: 1rem 3.5rem;
+        border: none;
+        &:active {
+            transform: translateY(0.125rem);
+        }
+    }
+
+    .btn-box {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .comics-box {
+        padding: 1rem 0;
+
+        ul.comics-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            a {
+                color: inherit;
+            
+                .card {
+                    width: 10rem;
+                    margin: 1rem 0.5rem;
+                    display: inline-block;
+                    
+                    img {
+                        height: 10rem;
+                    }
+                
+                    h5 {
+                        font-size: 1rem;
+                        margin: 0.5rem 0;
+                    }
+                }
+            }
+        }
+    }
+}
