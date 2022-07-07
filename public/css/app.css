@@ -1,0 +1,27 @@
+@import url(https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap);
+
+:root {
+  --primary-color: white;
+  --secondary-color: rgb(2, 130, 249);
+  --tertiary-color: rgb(48, 48, 48);
+  --quaternary-color: rgb(28, 28, 28);
+  --container-md: 75rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 1px solid red;
+}
+
+body {
+  font-family: "Rufina", serif;
+}
+
+.container {
+  margin: 1.25rem auto;
+  width: 100%;
+  max-width: var(--container-md);
+}
+
