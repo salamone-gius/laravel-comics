@@ -14,14 +14,16 @@
         </div>
     </div>
     <div class="header-bottom container">
-        <div class="header__logo">
+        <div class="header-logo">
             <img src="{{asset('img/dc-logo.png')}}" alt="DC-Logo">
         </div>
-        <nav class="header__nav">
+        <nav class="header-nav">
             <ul>
-                {{-- <li v-for="(link, index) in links" :key="index">
-                    <a :class="{active : link.current}" :href="link.url">{{link.text}}</a>
-                </li> --}}
+                @foreach ($links as $link)
+                    <li>
+                        <a href="{{$link['url']}}">{{$link['text']}}</a>
+                    </li>
+                @endforeach
             </ul>
         </nav>
     </div>
