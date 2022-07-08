@@ -8,4 +8,5 @@
     @include('main-sections.hero')
     @include('main-sections.comicLabel')
     @include('main-sections.comicInformation')
+    @include('main-sections.comicDetails')
 @endsection

@@ -1,10 +1,11 @@
 .comic-information-section {
     background-color: var(--primary-color);
+    margin: -25px 0;
 
     .container {
         max-width: var(--container-sm);
         display: flex;
-        padding: 3rem 0;
+        padding: 4rem 0;
 
         .col-left {
             width: 65%;
