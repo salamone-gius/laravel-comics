@@ -13,24 +13,31 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/home', function () {
     $links = config('links');
 
     $comics = config('comics');
 
-    // $comicsHomeInfo = [
-    //     [
-    //         'title' => '',
-    //         'thumb' => '',
-    //     ]
-    // ];
-
-    // foreach ($comics as $comic) {
-    //     $comicsHomeInfo[$comic['title']] [] = $comic['title'];
-    //     $comicsHomeInfo[$comic['thumb']] [] = $comic['thumb'];
-    // }
-
-    // dd($comicsHomeInfo);
-
     return view('home', compact('links'), compact('comics'));
 });
+
+// rotta parametrica: tra le graffe l'utente passa un numero che salvo nella variabile $id passandola alla funzione anonima per fare le logiche
+Route::get('/comic-info/{id}', function($id) {
+
+    // salvo in $comics i l'array/database
+    $comics = config('comics');
+
+    // controllo SE l'id è maggiore o uguale alla CONTA degli elementi dell'array $comics...
+    if ($id >= count($comics)) {
+        // ...lancio la pagina di errore 404 e abortisce tutto
+        abort('404');
+    }
+
+    // salvo l'id di ogni elemento dell'array in $singleComic
+    $singleComic = $comics[$id];
+
+    // ritorna la vista della pagina comicInfo.blade.php e la versione compatta di $singleComic;
+    return view('comicInfo', compact('singleComic'));
+
+// regular expression: controlla che il parametro sia un numero
+})->where('id', '[0-9]+');
