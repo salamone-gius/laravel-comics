@@ -22,7 +22,10 @@ Route::get('/home', function () {
 });
 
 // rotta parametrica: tra le graffe l'utente passa un numero che salvo nella variabile $id passandola alla funzione anonima per fare le logiche
-Route::get('/comic-info/{id}', function($id) {
+Route::get('comic-info/{id}', function($id) {
+
+    // mi devo portare pure questi che ce li ho nell'header
+    $links = config('links');
 
     // salvo in $comics i l'array/database
     $comics = config('comics');
@@ -37,7 +40,7 @@ Route::get('/comic-info/{id}', function($id) {
     $singleComic = $comics[$id];
 
     // ritorna la vista della pagina comicInfo.blade.php e la versione compatta di $singleComic;
-    return view('comicInfo', compact('singleComic'));
+    return view('comicInfo', compact('links'), compact('singleComic'));
 
 // regular expression: controlla che il parametro sia un numero
 })->where('id', '[0-9]+');

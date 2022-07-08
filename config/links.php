@@ -2,7 +2,7 @@
 
     return [
         [
-            "text" => "characters",
+            "text" => "home",
             "url" => "#",
             "current" => false,
         ],
