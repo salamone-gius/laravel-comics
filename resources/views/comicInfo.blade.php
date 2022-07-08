@@ -5,5 +5,6 @@
 @endsection
 
 @section('page-content')
-    <h1>{{$singleComic['title']}}</h1>
+    @include('main-sections.hero')
+    @include('main-sections.comicLabel')
 @endsection

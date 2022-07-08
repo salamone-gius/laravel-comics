@@ -4,7 +4,13 @@
 @import 'partials/containers';
 @import 'partials/header';
 @import 'partials/main';
-@import 'partials/sectionHero';
-@import 'partials/sectionComics';
-@import 'partials/sectionNavigation';
+
+
+// MAIN SECTIONS \\
+@import 'main-sections/sectionHero';
+@import 'main-sections/sectionComics';
+@import 'main-sections/sectionNavigation';
+@import 'main-sections/sectionComicLabel';
+
+
 @import 'partials/footer';

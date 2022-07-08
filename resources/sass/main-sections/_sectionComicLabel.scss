@@ -1,0 +1,17 @@
+.comic-label-section {
+    background-color: var(--secondary-color);
+    min-height: 6rem;
+    margin-top: -2.5rem;
+
+    .comic-thumb {
+        position: relative;
+
+        img {
+            min-width: 10rem;
+            position: absolute;
+            bottom: -4rem;
+            left: 0;
+            border: 1px solid var(--primary-color);
+        }
+    }
+}

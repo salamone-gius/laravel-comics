@@ -10,6 +10,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  border: 1px solid red;
 }
 
 body {
@@ -195,6 +196,22 @@ main {
 }
 .navigation-section nav ul li a span {
   font-size: 1rem;
+}
+
+.comic-label-section {
+  background-color: var(--secondary-color);
+  min-height: 6rem;
+  margin-top: -2.5rem;
+}
+.comic-label-section .comic-thumb {
+  position: relative;
+}
+.comic-label-section .comic-thumb img {
+  min-width: 10rem;
+  position: absolute;
+  bottom: -4rem;
+  left: 0;
+  border: 1px solid var(--primary-color);
 }
 
 .footer-top {
