@@ -1,0 +1,42 @@
+.navigation-section {
+    background-color: var(--secondary-color);
+    padding: 1.875rem;
+  
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+  
+    nav ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 .625rem;
+    }
+  
+    nav ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: var(--primary-color);
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            cursor: pointer;
+        }
+  
+        img {
+            width: 3rem;
+            margin-right: .625rem;
+
+            &.other {
+                width: 2.3rem;
+            }
+        }
+
+        span {
+            font-size: 1rem;
+        }
+    }
+}
+  

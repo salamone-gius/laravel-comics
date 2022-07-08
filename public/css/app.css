@@ -189,3 +189,45 @@ main {
   margin: 0.5rem 0;
 }
 
+.navigation-section {
+  background-color: var(--secondary-color);
+  padding: 1.875rem;
+}
+
+.navigation-section nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navigation-section nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 0.625rem;
+}
+
+.navigation-section nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+}
+
+.navigation-section nav ul li a:hover {
+  cursor: pointer;
+}
+
+.navigation-section nav ul li a img {
+  width: 3rem;
+  margin-right: 0.625rem;
+}
+
+.navigation-section nav ul li a img.other {
+  width: 2.3rem;
+}
+
+.navigation-section nav ul li a span {
+  font-size: 1rem;
+}
+
