@@ -3,7 +3,11 @@
   --secondary-color: rgb(2, 130, 249);
   --tertiary-color: rgb(58, 58, 58);
   --quaternary-color: rgb(28, 28, 28);
+  --quinary-color: rgb(0, 63, 94);
+  --hexanary-color: rgb(85, 186, 89);
+  --septenary-color: rgb(53, 119, 57);
   --container-md: 80rem;
+  --container-sm: 65rem;
 }
 
 * {
@@ -203,15 +207,86 @@ main {
   min-height: 6rem;
   margin-top: -2.5rem;
 }
-.comic-label-section .comic-thumb {
+.comic-label-section .container {
+  max-width: var(--container-sm);
+}
+.comic-label-section .container .comic-thumb {
   position: relative;
 }
-.comic-label-section .comic-thumb img {
+.comic-label-section .container .comic-thumb img {
   min-width: 10rem;
   position: absolute;
   bottom: -4rem;
   left: 0;
   border: 1px solid var(--primary-color);
+}
+
+.comic-information-section {
+  background-color: var(--primary-color);
+}
+.comic-information-section .container {
+  max-width: var(--container-sm);
+  display: flex;
+  padding: 3rem 0;
+}
+.comic-information-section .container .col-left {
+  width: 65%;
+}
+.comic-information-section .container .col-left h1 {
+  color: var(--quinary-color);
+  font-size: 1.8rem;
+  padding: 1.5rem 0;
+}
+.comic-information-section .container .col-left .info-box {
+  display: flex;
+  color: var(--primary-color);
+  font-size: 1rem;
+}
+.comic-information-section .container .col-left .info-box .price-box, .comic-information-section .container .col-left .info-box .availability-box {
+  background-color: var(--hexanary-color);
+  border: 1px solid var(--septenary-color);
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.comic-information-section .container .col-left .info-box .price-box {
+  width: 70%;
+  justify-content: space-between;
+}
+.comic-information-section .container .col-left .info-box .price-box .text-opacity {
+  opacity: 0.7;
+}
+.comic-information-section .container .col-left .info-box .availability-box {
+  width: 30%;
+  justify-content: center;
+}
+.comic-information-section .container .col-left .info-box .availability-box i {
+  margin-left: 0.4rem;
+  font-size: 0.7rem;
+}
+.comic-information-section .container .col-left .info-box .availability-box span, .comic-information-section .container .col-left .info-box .availability-box i {
+  cursor: pointer;
+}
+.comic-information-section .container .col-left p {
+  color: var(--tertiary-color);
+  font-size: 1rem;
+  padding: 1rem 0;
+  line-height: 25px;
+}
+.comic-information-section .container .col-right {
+  width: 35%;
+}
+.comic-information-section .container .col-right .ad {
+  color: var(--tertiary-color);
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: 0.6rem 0;
+  text-align: end;
+  font-weight: bold;
+}
+.comic-information-section .container .col-right img {
+  width: 100%;
+  padding-left: 2rem;
 }
 
 .footer-top {

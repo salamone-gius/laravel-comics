@@ -1,0 +1,81 @@
+.comic-information-section {
+    background-color: var(--primary-color);
+
+    .container {
+        max-width: var(--container-sm);
+        display: flex;
+        padding: 3rem 0;
+
+        .col-left {
+            width: 65%;
+
+            h1 {
+                color: var(--quinary-color);
+                font-size: 1.8rem;
+                padding: 1.5rem 0;
+            }
+
+            .info-box {
+                display: flex;
+                color: var(--primary-color);
+                font-size: 1rem;
+
+                .price-box, .availability-box {
+                    background-color: var(--hexanary-color);
+                    border: 1px solid var(--septenary-color);
+                    display: flex;
+                    align-items: center;
+                    padding: 1rem;
+                }
+    
+                .price-box {
+                    width: 70%;
+                    justify-content: space-between;
+
+                    .text-opacity {
+                        opacity: 0.7;
+                    }
+                }
+    
+                .availability-box {
+                    width: 30%;
+                    justify-content: center;
+
+                    i {
+                        margin-left: 0.4rem;
+                        font-size: 0.7rem;
+                    }
+
+                    span, i {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            p {
+                color: var(--tertiary-color);
+                font-size: 1rem;
+                padding: 1rem 0;
+                line-height: 25px;
+            }
+        }
+
+        .col-right {
+            width: 35%;
+
+            .ad{
+                color: var(--tertiary-color);
+                text-transform: uppercase;
+                font-size: 1rem;
+                padding: 0.6rem 0;
+                text-align: end;
+                font-weight: bold;
+            }
+
+            img {
+                width: 100%;
+                padding-left: 2rem;
+            }
+        }
+    }
+}
