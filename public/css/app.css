@@ -6,8 +6,8 @@
   --quinary-color: rgb(0, 63, 94);
   --hexanary-color: rgb(85, 186, 89);
   --septenary-color: rgb(53, 119, 57);
-  --octonary-color: rgb(240, 240, 240);
-  --another-color: rgb(210, 210, 210);
+  --octonary-color: rgb(210, 210, 210);
+  --another-color: rgb(180, 180, 180);
   --container-md: 80rem;
   --container-sm: 65rem;
 }
@@ -16,7 +16,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 1px solid red;
 }
 
 body {
@@ -301,51 +300,93 @@ main {
   max-width: var(--container-sm);
   padding: 3rem 0;
 }
-.comic-details-section .container .section-top {
-  width: 100%;
+.comic-details-section .section-top {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
-.comic-details-section .container .section-top .left-col, .comic-details-section .container .section-top .right-col {
+.comic-details-section .section-top .left-col, .comic-details-section .section-top .right-col {
   width: 45%;
 }
-.comic-details-section .container .section-top .left-col h2, .comic-details-section .container .section-top .left-col .details, .comic-details-section .container .section-top .right-col h2, .comic-details-section .container .section-top .right-col .details {
+.comic-details-section .section-top .left-col h2, .comic-details-section .section-top .left-col .details, .comic-details-section .section-top .right-col h2, .comic-details-section .section-top .right-col .details {
   border-bottom: 1px solid var(--another-color);
 }
-.comic-details-section .container .section-top .left-col h2, .comic-details-section .container .section-top .left-col h3, .comic-details-section .container .section-top .right-col h2, .comic-details-section .container .section-top .right-col h3 {
+.comic-details-section .section-top .left-col h2, .comic-details-section .section-top .left-col h3, .comic-details-section .section-top .right-col h2, .comic-details-section .section-top .right-col h3 {
   color: var(--quinary-color);
 }
-.comic-details-section .container .section-top .left-col h2, .comic-details-section .container .section-top .right-col h2 {
+.comic-details-section .section-top .left-col h2, .comic-details-section .section-top .right-col h2 {
   font-size: 1.5rem;
   padding-bottom: 2rem;
 }
-.comic-details-section .container .section-top .left-col h3, .comic-details-section .container .section-top .left-col a, .comic-details-section .container .section-top .left-col p, .comic-details-section .container .section-top .right-col h3, .comic-details-section .container .section-top .right-col a, .comic-details-section .container .section-top .right-col p {
+.comic-details-section .section-top .left-col h3, .comic-details-section .section-top .left-col a, .comic-details-section .section-top .left-col p, .comic-details-section .section-top .right-col h3, .comic-details-section .section-top .right-col a, .comic-details-section .section-top .right-col p {
   font-size: 1rem;
   vertical-align: baseline;
   padding-top: 0.375rem;
 }
-.comic-details-section .container .section-top .left-col li, .comic-details-section .container .section-top .right-col li {
+.comic-details-section .section-top .left-col li, .comic-details-section .section-top .right-col li {
   list-style: none;
 }
-.comic-details-section .container .section-top .left-col li a, .comic-details-section .container .section-top .right-col li a {
+.comic-details-section .section-top .left-col li a, .comic-details-section .section-top .right-col li a {
   text-decoration: none;
-}
-.comic-details-section .container .section-top .left-col li a:hover, .comic-details-section .container .section-top .right-col li a:hover {
   color: var(--secondary-color);
 }
-.comic-details-section .container .section-top .left-col .details, .comic-details-section .container .section-top .right-col .details {
+.comic-details-section .section-top .left-col li a:hover, .comic-details-section .section-top .right-col li a:hover {
+  color: var(--quinary-color);
+}
+.comic-details-section .section-top .left-col .details, .comic-details-section .section-top .right-col .details {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   padding: 1rem 0;
 }
-.comic-details-section .container .section-top .left-col .details .detail-name, .comic-details-section .container .section-top .right-col .details .detail-name {
+.comic-details-section .section-top .left-col .details .detail-name, .comic-details-section .section-top .right-col .details .detail-name {
   width: 35%;
 }
-.comic-details-section .container .section-top .left-col .details .detail-value, .comic-details-section .container .section-top .right-col .details .detail-value {
+.comic-details-section .section-top .left-col .details .detail-value, .comic-details-section .section-top .right-col .details .detail-value {
   width: 65%;
+}
+.comic-details-section .section-bottom {
+  border: 1px solid var(--another-color);
+  margin: 1.5rem 0;
+}
+.comic-details-section .section-bottom .container {
+  padding: 0;
+  margin: 0 auto;
+}
+.comic-details-section .section-bottom .container nav {
+  width: 100%;
+}
+.comic-details-section .section-bottom .container nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.comic-details-section .section-bottom .container nav ul li {
+  list-style: none;
+  width: 25%;
+  border: 1px solid var(--another-color);
+}
+.comic-details-section .section-bottom .container nav ul li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-decoration: none;
+  color: var(--another-color);
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1.5rem;
+  height: 5rem;
+}
+.comic-details-section .section-bottom .container nav ul li a img {
+  width: 1.875rem;
+}
+.comic-details-section .section-bottom .container nav ul li a img.bigger {
+  width: 2.5rem;
 }
 
 .footer-top {

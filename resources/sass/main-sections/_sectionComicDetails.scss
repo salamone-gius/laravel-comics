@@ -6,60 +6,110 @@
     .container {
         max-width: var(--container-sm);
         padding: 3rem 0;
+    }
 
-        .section-top {
-            width: 100%;
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
+    .section-top {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
 
-            .left-col, .right-col {
-                width: 45%;
+        .left-col, .right-col {
+            width: 45%;
 
-                h2, .details {
-                    border-bottom: 1px solid var(--another-color);
-                }
+            h2, .details {
+                border-bottom: 1px solid var(--another-color);
+            }
 
-                h2, h3 {
-                    color: var(--quinary-color);
-                }
+            h2, h3 {
+                color: var(--quinary-color);
+            }
 
-                h2 {
-                    font-size: 1.5rem;
-                    padding-bottom: 2rem;
-                }
+            h2 {
+                font-size: 1.5rem;
+                padding-bottom: 2rem;
+            }
 
-                h3, a, p {
-                    font-size: 1rem;
-                    vertical-align: baseline;
-                    padding-top: .375rem;
-                }
+            h3, a, p {
+                font-size: 1rem;
+                vertical-align: baseline;
+                padding-top: .375rem;
+            }
 
-                li {
-                    list-style: none;
+            li {
+                list-style: none;
 
-                    a {
-                        text-decoration: none;
+                a {
+                    text-decoration: none;
+                    color: var(--secondary-color);
 
-                        &:hover {
-                            color: var(--secondary-color);
-                        }
+                    &:hover {
+                        color: var(--quinary-color);
                     }
                 }
+            }
 
-                .details {
-                    width: 100%;
+            .details {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                padding: 1rem 0;
+
+                .detail-name {
+                    width: 35%;
+                }
+
+                .detail-value {
+                    width: 65%;
+                }
+            }
+        }
+    }
+
+    .section-bottom {
+        border: 1px solid var(--another-color);
+        margin: 1.5rem 0;
+
+        .container {
+            padding: 0;
+            margin: 0 auto;
+
+            nav {
+                width: 100%;
+
+                ul {
                     display: flex;
-                    justify-content: space-between;
-                    align-items: flex-start;
-                    padding: 1rem 0;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
 
-                    .detail-name {
-                        width: 35%;
-                    }
+                    li {
+                        list-style: none;
+                        width: 25%;
+                        border: 1px solid var(--another-color);
 
-                    .detail-value {
-                        width: 65%;
+                        a {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: flex-start;
+                            text-decoration: none;
+                            color: var(--another-color);
+                            text-transform: uppercase;
+                            font-size: 1rem;
+                            font-weight: bold;
+                            padding: 1.5rem;
+                            height: 5rem;
+
+                            img {
+                                width: 1.875rem;
+
+                                &.bigger {
+                                    width: 2.5rem;
+                                }
+                            }
+                        }
                     }
                 }
             }
