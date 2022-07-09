@@ -47,8 +47,8 @@
             "current" => false,
         ],
         [
-            "text" => "shop",
-            "url" => "#",
+            "text" => "!fake!",
+            "url" => "route('home')",
             "current" => false,
         ],
     ]
