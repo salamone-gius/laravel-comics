@@ -71,37 +71,36 @@
             </div>
         </div>
     </div>
-        <div class="section-bottom">
-            <div class="container">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <span>digital comics</span>
-                                <img src="{{asset('img/buy-comics-digital-comics.png')}}" alt="Digital Comics">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span>shop dc</span>
-                                <img class="bigger" src="{{asset('img/buy-comics-subscriptions.png')}}" alt="shop dc">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span>comic shop locator</span>
-                                <img class="other" src="{{asset('img/buy-comics-shop-locator.png')}}" alt="Comic Shop Locator">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span>subscription</span>
-                                <img class="bigger" src="{{asset('img/buy-comics-merchandise.png')}}" alt="Subscription">
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+    <div class="section-bottom">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span>digital comics</span>
+                            <img src="{{asset('img/buy-comics-digital-comics.png')}}" alt="Digital Comics">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>shop dc</span>
+                            <img class="bigger" src="{{asset('img/buy-comics-subscriptions.png')}}" alt="shop dc">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>comic shop locator</span>
+                            <img class="other" src="{{asset('img/buy-comics-shop-locator.png')}}" alt="Comic Shop Locator">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>subscription</span>
+                            <img class="bigger" src="{{asset('img/buy-comics-merchandise.png')}}" alt="Subscription">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
 </section>
