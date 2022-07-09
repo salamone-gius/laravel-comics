@@ -18,6 +18,12 @@ Route::get('/home', function () {
 
     $comics = config('comics');
 
+    foreach ($comics as $index => $comic) {
+        $comic["id"] = $index;
+    }
+    
+    dd($comic);
+
     return view('home', compact('links'), compact('comics'));
 });
 
