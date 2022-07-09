@@ -3,9 +3,9 @@
         <div class="current-series">current series</div>
         <div class="comics-box">
             <ul class="comics-list">
-                @foreach ($comics as $comic)
+                @foreach ($comics as $index => $comic)
                     <li>
-                        <a href="#">
+                        <a href="{{route('comic-info', ['id' => $index])}}">
                             <div class="card">
                                 <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
                                 <h5>{{$comic['title']}}</h5>

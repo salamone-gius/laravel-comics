@@ -21,11 +21,11 @@ Route::get('/home', function () {
     foreach ($comics as $index => $comic) {
         $comic["id"] = $index;
     }
-    
-    dd($comic);
 
     return view('home', compact('links'), compact('comics'));
-});
+
+})->name('home');
+
 
 // rotta parametrica: tra le graffe l'utente passa un numero che salvo nella variabile $id passandola alla funzione anonima per fare le logiche
 Route::get('comic-info/{id}', function($id) {
@@ -49,4 +49,4 @@ Route::get('comic-info/{id}', function($id) {
     return view('comicInfo', compact('links'), compact('singleComic'));
 
 // regular expression: controlla che il parametro sia un numero
-})->where('id', '[0-9]+');
+})->where('id', '[0-9]+')->name('comic-info');
